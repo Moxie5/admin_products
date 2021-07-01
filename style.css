@@ -1,0 +1,114 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#main {
+  /* Style the buttons inside the tab */
+  /* Style the tab content */
+}
+
+#main .tab {
+  overflow: hidden;
+}
+
+#main .tab ul {
+  padding: 0;
+  margin: 0;
+}
+
+#main .tab ul li {
+  list-style: none;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 17px;
+  border-bottom: 1px solid #495666;
+}
+
+#main .tab ul li:hover {
+  color: #ffffff;
+  background-color: #495666;
+}
+
+#main .tab ul li.active {
+  color: #ffffff;
+  background-color: #495666;
+}
+
+#main .tab .tablinks {
+  color: #000000;
+}
+
+#main .settings {
+  padding: 15px 0;
+  border-top: 2px solid gray;
+}
+
+#main .tabcontent {
+  text-align: center;
+  display: none;
+}
+
+#main .tabcontent h3 {
+  text-align: center;
+}
+
+#main .tabcontent textarea {
+  width: 100%;
+}
+
+#main .tabcontent .params {
+  padding: 10px;
+  border-radius: 20px;
+  border: 2px solid gray;
+}
+
+#main aside {
+  padding: 15px;
+}
+
+#main aside select {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+#main aside .input {
+  margin-bottom: 15px;
+  display: block;
+}
+
+#main aside input[type="text"] {
+  width: 100%;
+}
+
+#main aside .status {
+  margin-top: 15px;
+  border-top: 2px solid gray;
+}
+
+#main .gallery_img {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 100px;
+}
+
+#main .gallery_img:hover {
+  border: 1px solid #777;
+}
+
+#main .gallery_img img {
+  width: 100%;
+  height: auto;
+}
+/*# sourceMappingURL=style.css.map */

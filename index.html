@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap css -->
+    <link href="bootstrap-4.3.1/css/bootstrap.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="dropzone/dropzone.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form action="/file-upload" class="dropzone" id="my-awesome-dropzone">
+                            </form>
+                        </div>
+                        <div class="col-md-12">
+                            <h5>Gallery</h5>
+                            <div class="gallery_img">
+                                <img src="apple.jpg" alt="">
+                            </div>
+                            <div class="gallery_img">
+                                <img src="dell.jpg" alt="">
+                            </div>
+                            <div class="gallery_img">
+                                <img src="asus.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row settings">
+                        <div class="col-md-2">
+                            <div class="tab">
+                                    <ul>
+                                        <li class="tablinks" onclick="tabcontent(event, 'general')" id="defaultOpen">General</li>
+                                        <li class="tablinks" onclick="tabcontent(event, 'add_param')">Params</li>
+                                        <li class="tablinks" onclick="tabcontent(event, 'add_spec')">Spec</li>
+                                        <li class="tablinks" onclick="tabcontent(event, 'add_extra')">Extra</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        <div class="col-md-10">
+                            <div id="general" class="tabcontent">
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <input type="text" class="form-control" placeholder="Model EN">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="text" class="form-control" placeholder="Model BG">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="text" class="form-control" placeholder="Sub Title EN">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="text" class="form-control" placeholder="Sub Title BG">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <textarea class="form-control" >Description EN</textarea>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <textarea class="form-control">Description BG</textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="add_param" class="tabcontent">
+                                <div class="row">
+                                    <div class="form-group col-md-12">
+                                        <button class="btn btn-info float-right">Add params</button>
+                                    </div>
+                                </div>
+                                <div class="row params">
+                                    <div class="form-group col-md-12">
+                                        <button class="btn btn-danger float-right">Delete Params</button>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <select class="form-control">
+                                            <option selected>Params</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <select class="form-control">
+                                            <option selected>Params</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="text" class="form-control" placeholder="Key info EN">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="text" class="form-control" placeholder="Key info BG">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="text" class="form-control" placeholder="Value EN">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="text" class="form-control" placeholder="Value BG">
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="add_spec" class="tabcontent">
+                                <div class="row">
+                                    <div class="form-group col-md-12">
+                                        <button class="btn btn-info float-right">Add Spec</button>
+                                    </div>
+                                </div>
+                                <div class="row params">
+                                    <div class="form-group col-md-12">
+                                        <button class="btn btn-danger float-right">Delete Spec</button>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="text" class="form-control" placeholder="Key EN">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="text" class="form-control" placeholder="Key BG">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="text" class="form-control" placeholder="Value EN">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="text" class="form-control" placeholder="Value BG">
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="add_extra" class="tabcontent">
+                                <div class="row">
+                                    <div class="form-group col-md-12">
+                                        <button class="btn btn-info float-right">Add Extra</button>
+                                    </div>
+                                </div>
+                                <div class="row params">
+                                    <div class="form-group col-md-12">
+                                        <button class="btn btn-danger float-right">Remove Option</button>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="text" class="form-control" placeholder="Name EN">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="text" class="form-control" placeholder="Name BG">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="text" class="form-control" placeholder="Key EN">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="text" class="form-control" placeholder="Key BG">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="text" class="form-control" placeholder="Price EN">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" id="gridCheck" checked>
+                                          <label class="form-check-label" for="gridCheck">
+                                            Default
+                                          </label>
+                                        </div>
+                                      </div>
+                                    <div class="form-group col-md-12">
+                                        <button class="btn btn-danger float-right">Add Option</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <aside>
+                        <select name="Category" id="category"><option value=" Category" selected> Category</option></select>
+                        <select name="Sub Category" id="sub_category"><option value="Sub Category" selected>Sub Category</option></select>
+                        <div class="input">
+                            <input type="checkbox"> Hidden
+                        </div>
+                        <div class="input">
+                            <input type="checkbox"> Promotion
+                        </div>
+                        <div class="input">
+                            <input type="checkbox"> New Product
+                        </div>
+                        <Label>Discount</Label>
+                        <input type="text" value="0" placeholder="Discount">
+                        <div class="status">
+                            <h3>Status</h3>
+                            <select name="status" id="status"><option value="Status" selected>Status</option></select>
+                        </div>
+                        <div class="input">
+                            <input type="text" placeholder="URL">
+                        </div>
+                        <div class="input">
+                            <input type="text" placeholder="Price">
+                        </div>
+                    </aside>
+                </div>
+            </div>
+            <div class="row justify-content-end">
+                <button class="btn btn-danger">No thanks</button>
+                <button class="btn btn-success">OK</button>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap js -->
+    <script src="bootstrap-4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="dropzone/dropzone.js"></script>
+    <script src="script.js"></script>
+    <script>$('.file-upload').file_upload();</script>
+</body>
+</html>
