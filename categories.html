@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap css -->
+    <link href="bootstrap-4.3.1/css/bootstrap.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="dropzone/dropzone.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <div class="container">
+            <h3>Categories</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" placeholder="Route">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" placeholder="Class">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" placeholder="Icon">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" placeholder="Products">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <input type="number" class="form-control" placeholder="Index">
+                        </div>
+                    </div>
+                    <div class="form-check row ml-1">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Show on nav</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <textarea name="label_en" class="form-control" placeholder="Label EN"></textarea>
+                </div>
+                <div class="form-group col-md-6">
+                    <textarea name="label_bg" class="form-control" placeholder="Label BG"></textarea>
+                </div>
+                <div class="form-group col-md-6">
+                    <textarea name="title_en" class="form-control" placeholder="title EN"></textarea>
+                </div>
+                <div class="form-group col-md-6">
+                    <textarea name="title_bg" class="form-control" placeholder="Title BG"></textarea>
+                </div>
+                <div class="form-group col-md-6">
+                    <textarea name="label_bg" class="form-control" placeholder="Label BG"></textarea>
+                </div>
+                <div class="form-group col-md-6">
+                    <textarea name="title_en" class="form-control" placeholder="title EN"></textarea>
+                </div>
+            </div>
+            <div class="row justify-content-end">
+                <button class="btn btn-danger mr-3">No thanks</button>
+                <button class="btn btn-success">OK</button>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap js -->
+    <script src="bootstrap-4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="dropzone/dropzone.js"></script>
+    <script src="script.js"></script>
+    <script>$('.file-upload').file_upload();</script>
+</body>
+</html>
