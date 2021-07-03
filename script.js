@@ -14,3 +14,12 @@ function tabcontent(evt, cityName) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+
+$(document).ready(function () {
+    var dropIndex;
+    $("#image-list").sortable({
+            update: function(event, ui) { 
+                dropIndex = ui.item.index();
+        }
+    });
+});
